@@ -66,6 +66,12 @@
                         </div>
                     </form>
                 </div>
+
+                <div class="card-footer d-flex justify-content-around">
+                    <a href="#" class="btn btn-facebook"><i class="fab fa-facebook-f fa-fw"></i> Login con Facebook</a>
+                    <a href="#" class="btn btn-twitter"><i class="fab fa-twitter fa-fw"></i> Login con Twitter</a>
+                    <a href="#" class="btn btn-google"><i class="fab fa-google fa-fw"></i> Login con Google</a>
+                </div>
             </div>
         </div>
     </div>

@@ -6,3 +6,31 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+// Fontawesome
+@import '~@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import '~@fortawesome/fontawesome-free/scss/solid.scss';
+@import '~@fortawesome/fontawesome-free/scss/brands.scss';
+@import '~@fortawesome/fontawesome-free/scss/regular.scss';
+
+.btn-facebook, .btn-twitter, .btn-google {
+    color: white;
+    &:hover, &:active, &:focus {
+        color: white;
+    }
+}
+
+.btn-facebook {
+    background-color: $facebook-color;
+    border-color: darken($facebook-color, 3%);
+}
+
+.btn-twitter {
+    background-color: $twitter-color;
+    border-color: darken($twitter-color, 3%);
+}
+
+.btn-google {
+    background-color: $google-color;
+    border-color: darken($google-color, 3%);
+}
