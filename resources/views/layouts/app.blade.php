@@ -51,6 +51,7 @@
                         @else
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                    <img height="40px" src="{{ Auth::user()->avatar }}" alt="Avatar" class="rounded-circle">
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
@@ -71,6 +72,18 @@
                 </div>
             </div>
         </nav>
+
+        @if (session()->has('success'))
+            <div class="container mt-2">
+                <div class="alert alert-success">{{ session('success') }}</div>
+            </div>
+        @endif
+        @if (session()->has('warning'))
+            <div class="container mt-2">
+                <div class="alert alert-warning">{{ session('warning') }}</div>
+            </div>
+        @endif
+
 
         <main class="py-4">
             @yield('content')
